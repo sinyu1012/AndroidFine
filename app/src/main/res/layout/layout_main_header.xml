@@ -24,7 +24,7 @@
         android:focusableInTouchMode="true"
         android:maxWidth="180dp"
         android:singleLine="true"
-        android:text="AndroidFine"
+        android:text="智能停车"
         android:textColor="@color/text_color_white"
         android:textSize="@dimen/text_size_20" />
 

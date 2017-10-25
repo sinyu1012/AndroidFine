@@ -37,7 +37,7 @@
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
         android:paddingRight="14dp"
-        android:text="购房记录"
+        android:text="个人信息"
         android:textColor="@color/text_color_black"
         android:textSize="@dimen/text_size_16" />
 
@@ -58,7 +58,7 @@
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
         android:paddingRight="14dp"
-        android:text="关注楼盘"
+        android:text="我的收藏"
         android:textColor="@color/text_color_black"
         android:textSize="@dimen/text_size_16" />
 
@@ -79,7 +79,7 @@
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
         android:paddingRight="14dp"
-        android:text="购房帮助"
+        android:text="智能帮助"
         android:textColor="@color/text_color_black"
         android:textSize="@dimen/text_size_16" />
 
@@ -100,7 +100,7 @@
         android:gravity="center_vertical"
         android:paddingLeft="20dp"
         android:paddingRight="14dp"
-        android:text="房贷计算器"
+        android:text="关于我们"
         android:textColor="@color/text_color_black"
         android:textSize="@dimen/text_size_16" />
 

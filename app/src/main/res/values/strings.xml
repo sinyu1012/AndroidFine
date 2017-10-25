@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">AndroidFine</string>
+	<string name="app_name">智能停车</string>
 
 	<string name="clear_cache_menu">Clear Caches</string>
 	<string name="clear_cache_complete_toast">Caches have been cleared</string>
@@ -8,9 +8,9 @@
 	<string name="no_network_connection_toast">No network connection found</string>
 
 	<!-- 页面名称 -->
-	<string name="main_navigation_home">首页</string>
-	<string name="main_navigation_im">选房清单</string>
-	<string name="main_navigation_interest">看房日程</string>
+	<string name="main_navigation_home">停车</string>
+	<string name="main_navigation_im">计时</string>
+	<string name="main_navigation_interest">服务</string>
 	<string name="main_navigation_user">我的</string>
 
 	<string name="market_info_title">大盘行情   dds</string>

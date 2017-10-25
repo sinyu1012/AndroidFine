@@ -42,14 +42,16 @@ public class SplashActivity extends FragmentActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                if(firstTimeUse) {
-                    Animation fadeOut = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.fadeout);
-                    fadeOut.setFillAfter(true);
-                    findViewById(R.id.guideImage).startAnimation(fadeOut);
-                    initGuideGallery();
-                } else {
-                    UIHelper.showHome(SplashActivity.this);
-                }
+
+                UIHelper.showHome(SplashActivity.this);
+//                if(firstTimeUse) {
+//                    Animation fadeOut = AnimationUtils.loadAnimation(SplashActivity.this, R.anim.fadeout);
+//                    fadeOut.setFillAfter(true);
+//                    findViewById(R.id.guideImage).startAnimation(fadeOut);
+//                    initGuideGallery();
+//                } else {
+//                    UIHelper.showHome(SplashActivity.this);
+//                }
             }
         }, 2000);
     }

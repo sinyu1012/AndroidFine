@@ -17,6 +17,12 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <service android:name=".model.TimeService"/>
+        <receiver android:name=".model.UITimeReceiver">
+            <intent-filter>
+                <action android:name="com.yy.time.TIME_CHANGED_ACTION"/>
+            </intent-filter>
+        </receiver>
 
         <activity android:name=".activity.MainActivity" android:launchMode="singleTask" android:screenOrientation="portrait" />
         <activity android:name=".activity.LoginActivity" android:screenOrientation="portrait" />

@@ -25,6 +25,12 @@ public class StringUtils {
         numberFormat.setMaximumFractionDigits(2);
         numberFormat.setMinimumFractionDigits(2);
     }
+    //获取当前的时间
+    public static String gettime(){
+        SimpleDateFormat sDateFormat  =  new SimpleDateFormat("hh:mm:ss");
+        String date = sDateFormat.format(new java.util.Date());
+        return date;
+    }
 
     private final static ThreadLocal<SimpleDateFormat> dateFormater = new ThreadLocal<SimpleDateFormat>() {
         @Override

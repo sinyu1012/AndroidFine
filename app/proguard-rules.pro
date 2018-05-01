@@ -44,8 +44,8 @@
 -keep class * implements android.os.Parcelable {public static final android.os.Parcelable$Creator *; }
 ##################upper is for common android
 
--keep public interface com.yuzhi.fine.common.NotObfuscateInterface{public *;}
--keep class * implements com.yuzhi.fine.common.NotObfuscateInterface{
+-keep public interface com.ycit.parking.common.NotObfuscateInterface{public *;}
+-keep class * implements com.ycit.parking.common.NotObfuscateInterface{
 	<methods>;
 	<fields>;
 }
@@ -57,7 +57,6 @@
 -keepclassmembers enum com.j256.** { *; }
 -keep interface com.j256.**
 -keepclassmembers interface com.j256.** { *; }
-
 
 # butterknife uses reflection
 -keep class butterknife.** { *; }

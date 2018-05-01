@@ -9,11 +9,11 @@
 
 	<!-- 页面名称 -->
 	<string name="main_navigation_home">停车</string>
-	<string name="main_navigation_im">计时</string>
-	<string name="main_navigation_interest">服务</string>
+	<string name="main_navigation_im">附近</string>
+	<string name="main_navigation_interest">计时</string>
 	<string name="main_navigation_user">我的</string>
 
-	<string name="market_info_title">大盘行情   dds</string>
+	<string name="market_info_title">大</string>
 
 	<string name="progress_loading">加载中，请稍候</string>
 	<string name="progress_load_error">加载失败，点击屏幕刷新</string>

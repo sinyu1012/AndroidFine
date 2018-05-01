@@ -10,21 +10,42 @@
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
-        <Button
-            android:id="@+id/btn_start"
-            android:text="开始计时"
+        <TextView
+            android:id="@+id/tv_number"
+            android:text="车牌号"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="30sp"
+            android:textColor="@color/gold"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/shape_label_orange"
+            />
 
         <TextView
             android:id="@+id/tv_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
             android:layout_centerInParent="true"
             android:layout_marginTop="20.0dp"
-            android:gravity="center_horizontal"
+            android:gravity="center"
             android:text="00:00:00"
-            android:textSize="88.0sp" />
+            android:textColor="@color/short_orange"
+            android:background="@drawable/bg_text_circular"
+            android:textSize="70.0sp"
+            />
+        <Button
+            android:id="@+id/btn_start"
+            android:text="停车计时"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18.0dip"
+            android:layout_marginRight="18.0dip"
+            android:layout_marginTop="30.0dip"
+            android:background="@drawable/btn_orange"
+            android:textColor="#ffffffff"
+            android:textSize="17.0sp"/>
 
     </LinearLayout>
 </RelativeLayout>

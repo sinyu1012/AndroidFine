@@ -19,8 +19,16 @@
         <EditText
             android:id="@+id/edit_query"
             android:layout_width="0dp"
+            android:textSize="8dp"
             android:layout_height="wrap_content"
-            android:layout_weight="7" />
+            android:layout_weight="3"
+            />
+        <Button
+            android:id="@+id/bt_inpuquery"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="输入查询" />
         <Button
             android:id="@+id/bt_query"
             android:layout_width="0dp"

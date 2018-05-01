@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="com.android.support:renderscript:25.0.0@jar">
+    <CLASSES>
+      <root url="jar://D:/AndroidStudio/Sdk/build-tools/25.0.0/renderscript/lib/renderscript-v8.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

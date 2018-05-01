@@ -17,43 +17,41 @@ packer {
 
 android {
     compileSdkVersion 23
-    buildToolsVersion '23.0.2'
+    buildToolsVersion '25.0.0'
     defaultConfig {
         // Warning:Renderscript support mode is not currently supported with renderscript target 21+
         renderscriptTargetApi 20
         renderscriptSupportModeEnabled true
 
-        applicationId "com.yuzhi.fine"
-        minSdkVersion 14
+        applicationId "com.ycit.parking"
+        minSdkVersion 18
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
     }
     signingConfigs {
         release {
-            keyAlias 'AndroidFine'
-            keyPassword '11118888'
-            storeFile file('keystore/release.jks')
-            storePassword '11118888'
+            keyAlias 'YCITParking'
+            keyPassword '18861127872'
+            storeFile file('E:/Doing/停车场反向寻车系统/YCITParking')
+            storePassword '18861127872'
         }
-        debug {
-            keyAlias 'debug'
-            keyPassword '11118888'
-            storeFile file('keystore/debug.jks')
-            storePassword '11118888'
+        config {
+            keyAlias 'YCITParking'
+            keyPassword '18861127872'
+            storeFile file('E:/Doing/停车场反向寻车系统/YCITParking')
+            storePassword '18861127872'
         }
     }
     buildTypes {
         release {
             minifyEnabled true
-            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
             signingConfig signingConfigs.release
         }
         debug {
-            minifyEnabled false
-            debuggable true
-            signingConfig signingConfigs.debug
+           signingConfig signingConfigs.release
         }
     }
     sourceSets {
@@ -84,9 +82,14 @@ android {
         exclude 'lib/x86/libRSSupport.so'
     }
 }
-
+allprojects {
+    repositories {
+        jcenter() // 或者 mavenCentral()
+    }
+}
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //主要是这里，需要添加百度SDK jar包路径
     compile 'com.jakewharton:butterknife:7.0.1'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
@@ -98,4 +101,6 @@ dependencies {
     debugCompile 'com.squareup.leakcanary:leakcanary-android:1.3'
     releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.3'
     compile 'com.android.support:support-v4:23.2.0'
+    compile files('src/main/libs/AMap3DMap_5.4.0_AMapNavi_5.4.0_AMapSearch_5.3.1_AMapLocation_3.6.1_20171012.jar')
+    compile 'com.google.zxing:core:3.2.1'
 }
